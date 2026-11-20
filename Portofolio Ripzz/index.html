@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmad Arif Pratama — Portofolio</title>
+  <!-- Google Fonts: Plus Jakarta Sans & Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Rain + Wind Canvas Effect -->
+  <canvas id="rain-canvas"></canvas>
+
+  <!-- Ambient Monochrome Glow Background (Warna Gambar Pertama) -->
+  <div class="ambient-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Toast Notification (Untuk Copy Email & Feedback Interaksi) -->
+  <div id="toast" class="toast-msg">Email berhasil disalin!</div>
+
+  <main class="canvas-wrapper">
+    <!-- ==================== 1. HERO BANNER CARD ==================== -->
+    <section class="slide-card hero-card interactive-card">
+      <div class="card-spotlight"></div>
+
+      <!-- Organic Monochrome Waves -->
+      <svg class="wave-hero-top" viewBox="0 0 600 320" preserveAspectRatio="none">
+        <path d="M180,0 C240,140 430,80 600,210 L600,0 Z" fill="#27272a" opacity="0.85"/>
+        <path d="M100,0 C190,190 420,140 600,310 L600,0 Z" fill="#52525b" opacity="0.25"/>
+      </svg>
+      <svg class="wave-hero-bottom" viewBox="0 0 400 120" preserveAspectRatio="none">
+        <path d="M0,120 L0,45 C120,10 240,115 350,120 Z" fill="#27272a" opacity="0.9"/>
+      </svg>
+
+      <!-- Top Header Meta -->
+      <div class="hero-top-bar">
+        <div class="role-label">
+          <span>Pengembang<br>Web</span>
+          <span class="thin-line"></span>
+        </div>
+        <a href="#projects-section" class="year-badge">
+          <span>Portofolio 2026</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Center Oversized Typography + Handwritten Signature -->
+      <div class="hero-title-wrap">
+        <!-- Sparkles -->
+        <svg class="sparkle sp-left" viewBox="0 0 32 32">
+          <path d="M16 0 C16 11 21 16 32 16 C21 16 16 21 16 32 C16 21 11 16 0 16 C11 16 16 11 16 0 Z" fill="#f4f4f5"/>
+        </svg>
+        <svg class="sparkle sp-top-right" viewBox="0 0 32 32">
+          <path d="M16 0 C16 11 21 16 32 16 C21 16 16 21 16 32 C16 21 11 16 0 16 C11 16 16 11 16 0 Z" fill="#f4f4f5"/>
+        </svg>
+        <svg class="sparkle sp-top-small" viewBox="0 0 32 32">
+          <path d="M16 0 C16 11 21 16 32 16 C21 16 16 21 16 32 C16 21 11 16 0 16 C11 16 16 11 16 0 Z" fill="#a1a1aa"/>
+        </svg>
+
+        <h1 class="giant-title">portofolio</h1>
+        <span class="script-signature">Ahmad Arif Pratama</span>
+
+        <!-- Doodle Heart on 'o' -->
+        <svg class="doodle-heart-hero" viewBox="0 0 40 36" fill="none">
+          <path d="M20 32 C20 32 4 21 4 11 C4 6 8 3 12.5 3 C15.5 3 18.5 5 20 8 C21.5 5 24.5 3 27.5 3 C32 3 36 6 36 11 C36 21 20 32 20 32 Z" stroke="#a1a1aa" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== 2. GRID ROW 1: ABOUT ME & MY SKILLS ==================== -->
+    <div class="two-col-grid">
+      <!-- ABOUT ME CARD -->
+      <section class="slide-card about-card interactive-card">
+        <div class="card-spotlight"></div>
+        <svg class="wave-corner-bl" viewBox="0 0 220 120" preserveAspectRatio="none">
+          <path d="M0,120 L0,35 C75,20 130,95 210,120 Z" fill="#27272a" opacity="0.85"/>
+        </svg>
+        <svg class="wave-corner-tr-soft" viewBox="0 0 260 260" preserveAspectRatio="none">
+          <path d="M60,0 C90,130 160,180 260,210 L260,0 Z" fill="#3f3f46" opacity="0.3"/>
+        </svg>
+
+        <div class="about-text">
+          <h2 class="card-heading">Tentang Saya</h2>
+          <p>
+            Halo, saya Ahmad Arif Pratama siswa Rekayasa Perangkat Lunak (RPL) yang memiliki ketertarikan besar dalam bidang pengembangan web dan teknologi. Saya senang mengubah ide menjadi website yang fungsional, menarik, dan mudah digunakan. Saya memiliki minat dalam Web Development. Saya terbiasa mempelajari dan menggunakan teknologi seperti HTML, CSS, JavaScript, PHP, Laravel, dan MySQL. Saya terus mengembangkan kemampuan melalui berbagai proyek dan pengalaman belajar secara langsung.
+          </p>
+          <p class="handwritten-note">Mari ciptakan sesuatu yang luar biasa!</p>
+        </div>
+
+        <div class="about-photo-area">
+          <!-- Doodle Heart -->
+          <svg class="doodle-heart-about" viewBox="0 0 48 42" fill="none">
+            <path d="M22 36 C22 36 5 24 5 13 C5 7.5 9.5 4 14 4 C17.5 4 20.5 6.5 22 9.5 C23.5 6.5 26.5 4 30 4 C34.5 4 39 7.5 39 13 C39 24 22 36 22 36 Z" stroke="#f4f4f5" stroke-width="2.4" stroke-linecap="round"/>
+            <path d="M42 6 L45 2 M44 12 L48 11" stroke="#a1a1aa" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+
+          <!-- Circular Portrait -->
+          <div class="profile-circle">
+            <img src="assets/hero.png" alt="Ramaa" />
+          </div>
+        </div>
+      </section>
+
+      <!-- MY SKILLS CARD -->
+      <section class="slide-card skills-card interactive-card">
+        <div class="card-spotlight"></div>
+        <svg class="wave-corner-br" viewBox="0 0 260 110" preserveAspectRatio="none">
+          <path d="M40,110 C110,65 180,25 260,15 L260,110 Z" fill="#27272a" opacity="0.85"/>
+        </svg>
+
+        <div class="skills-left">
+          <h2 class="card-heading">Keahlian Saya</h2>
+          <div class="skills-grid">
+            <div class="skill-item" data-skill="HTML5 — Struktur & Semantik Halaman Web Modern">
+              <div class="app-badge badge-html">HTML</div>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item" data-skill="CSS3 — Styling Responsif, Flexbox, Grid & Animasi UI">
+              <div class="app-badge badge-css">CSS</div>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item" data-skill="JavaScript — Interaktivitas Web Dinamis & DOM Manipulation">
+              <div class="app-badge badge-js">JS</div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item" data-skill="PHP — Server-Side Scripting & Pengolahan Database">
+              <div class="app-badge badge-php">PHP</div>
+              <span>PHP</span>
+            </div>
+            <div class="skill-item" data-skill="Laravel — MVC Framework, RESTful API & Backend Development">
+              <div class="app-badge badge-laravel">Lv</div>
+              <span>Laravel</span>
+            </div>
+            <div class="skill-item" data-skill="Figma — UI/UX Design & Prototyping Interaktif">
+              <div class="app-badge badge-figma">
+                <span class="fig-dot f1"></span>
+                <span class="fig-dot f2"></span>
+                <span class="fig-dot f3"></span>
+                <span class="fig-dot f4"></span>
+                <span class="fig-dot f5"></span>
+              </div>
+              <span>Figma</span>
+            </div>
+          </div>
+          <p id="skill-detail-label" class="skill-hint">Arahkan kursor atau klik keahlian untuk melihat detail</p>
+        </div>
+
+        <div class="skills-right">
+          <svg class="sparkle sp-skills" viewBox="0 0 32 32">
+            <path d="M16 0 C16 11 21 16 32 16 C21 16 16 21 16 32 C16 21 11 16 0 16 C11 16 16 11 16 0 Z" fill="#f4f4f5"/>
+          </svg>
+          <div class="motto-words">
+            <span>Desain</span>
+            <span>Karya</span>
+            <span>Inspirasi</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== 3. GRID ROW 2: MY PROJECTS & EXPERIENCE ==================== -->
+    <div id="projects-section" class="two-col-grid">
+      <!-- MY PROJECTS CARD -->
+      <section class="slide-card projects-card interactive-card">
+        <div class="card-spotlight"></div>
+        <svg class="wave-corner-bl" viewBox="0 0 220 110" preserveAspectRatio="none">
+          <path d="M0,110 L0,30 C80,15 140,90 215,110 Z" fill="#27272a" opacity="0.85"/>
+        </svg>
+
+        <div class="card-top-row">
+          <h2 class="card-heading">Proyek Saya</h2>
+          <div class="doodle-rays">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <button type="button" class="project-item"
+            data-title="SIMOJO — Sistem Informasi Mojokerto"
+            data-desc="SIMOJO merupakan aplikasi berbasis web yang dikembangkan untuk mempermudah proses pelayanan perizinan usaha di Kota Mojokerto. Sistem ini dirancang untuk mendigitalisasi proses pendaftaran, pengajuan dokumen persyaratan, serta pemantauan status permohonan izin secara online.
+                      Platform ini menyediakan akses bagi pelaku usaha dan petugas dengan hak akses berbeda, sehingga proses pengelolaan data dan pelayanan perizinan menjadi lebih terstruktur, transparan, dan efisien."
+            data-img="assets/geser.png">
+            <div class="project-thumb">
+              <img src="assets/geser.png" alt="Desain Branding" />
+              <span class="zoom-badge"><i data-lucide="maximize-2"></i></span>
+            </div>
+            <span class="project-caption">Simojo</span>
+          </button>
+
+          <button type="button" class="project-item"
+            data-title="CampingRent — Camping Equipment Rental System"
+            data-desc="CampingRent merupakan aplikasi berbasis web yang dirancang untuk mempermudah proses penyewaan alat camping secara online. Platform ini menyediakan layanan penyewaan perlengkapan outdoor dengan sistem yang praktis, mulai dari pencarian koleksi alat camping hingga proses pemesanan dan pengelolaan penyewaan.
+                      Aplikasi ini dikembangkan dengan antarmuka yang sederhana, modern, dan mudah digunakan, serta menyediakan fitur pengelolaan bagi admin untuk mendukung proses operasional penyewaan."
+            data-img="assets/hijas.png">
+            <div class="project-thumb">
+              <img src="assets/hijas.png" alt="Desain UI/UX" />
+              <span class="zoom-badge"><i data-lucide="maximize-2"></i></span>
+            </div>
+            <span class="project-caption">Camping Rental</span>
+          </button>
+
+          <button type="button" class="project-item"
+            data-title="E-Learn — Learning Management System"
+            data-desc="E-Learn merupakan platform pembelajaran digital berbasis web yang dirancang untuk mempermudah proses belajar mengajar di SMK Negeri 2 Mojokerto. Platform ini menyediakan ruang belajar terintegrasi bagi siswa, guru, dan admin untuk mendukung kegiatan akademik secara lebih praktis, terstruktur, dan efisien. Project ini berfokus pada pengembangan antarmuka yang modern, sistem autentikasi berdasarkan peran pengguna, serta pengelolaan aktivitas pembelajaran dalam satu platform digital."
+            data-img="assets/sese.png">
+            <div class="project-thumb">
+              <img src="assets/sese.png" alt="Platform E-Learn" />
+              <span class="zoom-badge"><i data-lucide="maximize-2"></i></span>
+            </div>
+            <span class="project-caption">E-Learning</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE CARD (Tanpa foto di samping) -->
+      <section class="slide-card experience-card experience-single interactive-card">
+        <div class="card-spotlight"></div>
+        <svg class="wave-corner-tr-blue" viewBox="0 0 280 260" preserveAspectRatio="none">
+          <path d="M50,0 C110,130 190,170 280,220 L280,0 Z" fill="#3f3f46" opacity="0.35"/>
+        </svg>
+
+        <div class="exp-left">
+          <div class="heading-with-line">
+            <h2 class="card-heading">PENGALAMAN</h2>
+            <span class="short-line"></span>
+          </div>
+
+          <div class="exp-timeline">
+            <div class="exp-item">
+              <div class="exp-marker">
+                <span class="exp-dot"></span>
+              </div>
+              <div class="exp-content">
+                <h3>PENGEMBANG WEB</h3>
+                <p class="exp-meta">PKL &amp; Proyek Pengembangan Web</p>
+                <p class="exp-desc">Mengembangkan aplikasi berbasis web menggunakan Laravel, PHP, dan MySQL, serta membangun fitur dan antarmuka pengguna.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== 4. GRID ROW 3: BIDANG KEAHLIAN & SOCIAL CONTACT ==================== -->
+    <div class="two-col-grid">
+      <!-- BIDANG KEAHLIAN CARD -->
+      <section class="slide-card services-card interactive-card">
+        <div class="card-spotlight"></div>
+        <svg class="wave-corner-bl" viewBox="0 0 220 110" preserveAspectRatio="none">
+          <path d="M0,110 L0,30 C80,15 140,90 215,110 Z" fill="#27272a" opacity="0.85"/>
+        </svg>
+
+        <div class="card-top-row">
+          <h2 class="card-heading">Bidang Keahlian</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-box">
+            <div class="service-icon"><i data-lucide="code-2"></i></div>
+            <strong class="service-title">Pengembangan Web</strong>
+            <span class="service-sub">Laravel &amp; PHP</span>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i data-lucide="database"></i></div>
+            <strong class="service-title">Manajemen Database</strong>
+            <span class="service-sub">MySQL</span>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i data-lucide="monitor"></i></div>
+            <strong class="service-title">Frontend Development</strong>
+            <span class="service-sub">HTML, CSS &amp; JavaScript</span>
+          </div>
+          <div class="service-box">
+            <div class="service-icon"><i data-lucide="palette"></i></div>
+            <strong class="service-title">UI/UX Design</strong>
+            <span class="service-sub">Figma</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL & CONTACT CARD (Tanpa "Mari Bekerja Sama!") -->
+      <section class="slide-card contact-card contact-only interactive-card">
+        <div class="card-spotlight"></div>
+        <svg class="wave-corner-br-large" viewBox="0 0 320 180" preserveAspectRatio="none">
+          <path d="M40,180 C120,120 200,40 320,15 L320,180 Z" fill="#27272a" opacity="0.85"/>
+          <path d="M110,180 C180,120 240,80 320,75 L320,180 Z" fill="#18181b" opacity="0.7"/>
+        </svg>
+
+        <!-- Doodle Heart Bottom Right -->
+        <svg class="doodle-heart-footer" viewBox="0 0 40 36" fill="none">
+          <path d="M20 32 C20 32 4 21 4 11 C4 6 8 3 12.5 3 C15.5 3 18.5 5 20 8 C21.5 5 24.5 3 27.5 3 C32 3 36 6 36 11 C36 21 20 32 20 32 Z" stroke="#f4f4f5" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+
+        <div class="contact-inner">
+          <div class="contact-right">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/r1pzzz_?cnvx=MTBqMjltc2JpOTZ5ag==" target="_blank" rel="noopener" class="contact-link">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </span>
+              <span>@ripzzz</span>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@ripzzzzzz_" target="_blank" rel="noopener" class="contact-link">
+              <span class="icon-circle">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </span>
+              <span>@ripzzzzzz_</span>
+            </a>
+
+            <!-- Email (One-Click Copy) -->
+            <button type="button" class="contact-link copy-email-btn" data-email="ramaa0826@gmail.com" title="Klik untuk menyalin email">
+              <span class="icon-circle"><i data-lucide="mail"></i></span>
+              <span>ramaa0826@gmail.com</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="thank-you-footer">
+          <span>TERIMA KASIH TELAH MELIHAT</span>
+          <span class="tiny-heart">♥</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- INTERACTIVE LIGHTBOX MODAL UNTUK PROJECT -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true">
+    <div class="modal-box">
+      <button type="button" id="close-modal" class="modal-close" aria-label="Tutup">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-img-wrap">
+        <img id="modal-img" src="" alt="Pratinjau Proyek" />
+      </div>
+      <div class="modal-body">
+        <h3 id="modal-title">Judul Proyek</h3>
+        <p id="modal-desc">Deskripsi proyek akan ditampilkan di sini.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
